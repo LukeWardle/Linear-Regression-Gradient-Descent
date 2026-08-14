@@ -1,21 +1,32 @@
 # Linear Regression with Gradient Descent
 
-This Jupyter Notebook demonstrates a mini project on implementing Linear Regression using Gradient Descent. The project is designed to deepen the understanding of fundamental machine learning concepts by showcasing the following:
+Practice notebook, February 2025. Implements gradient descent from scratch to fit a
+linear model, and looks at what the learning rate and iteration count do to convergence.
 
-- **Gradient Descent Implementation:**  
-  Learn how to iteratively update model parameters (θ) to minimize the Mean Squared Error (MSE) between predicted and actual values.
+## What it covers
 
-- **Hyperparameter Tuning:**  
-  Experiment with different learning rates and iteration counts to observe their impact on the convergence behavior of the model. Visualizations of the cost function over iterations provide insight into how the model learns.
+- **Gradient descent written out directly** — iterative parameter updates minimising mean
+  squared error, rather than calling a solver
+- **Learning rate and iteration count varied**, to see the effect on whether and how fast
+  the model converges
+- **Cost plotted against iteration**, so the optimisation is visible rather than assumed
 
-- **Cost Function Visualization:**  
-  See how the cost (MSE) decreases over iterations, which helps in understanding the stability and efficiency of the optimization process.
+## Running it
 
-This project builds upon previous work, such as the [California Housing Price Prediction - Linear Regression](https://github.com/LukeWardle/California-Housing-Regression) project, by taking a deeper dive into model optimization and hyperparameter experimentation.
+```bash
+pip install numpy pandas matplotlib jupyter
+jupyter notebook
+```
 
-**Key Takeaways:**
-- Grasping the core principles behind gradient descent.
-- Understanding how learning rates and the number of iterations affect model convergence.
-- Gaining hands-on experience with visualizing model performance and error convergence.
+Open the notebook and run the cells in order.
 
-Feel free to explore, modify, and expand this notebook to further your understanding of these essential machine learning techniques.
+## Scope
+
+A learning exercise, not a library. The maths is written out step by step rather than
+optimised, and there are no tests.
+
+Later work in this account covers the same ground with a production structure —
+[week3-linear-solvers](https://github.com/LukeWardle/week3-linear-solvers) for solver
+selection and conditioning, and
+[ftse-portfolio-rebalancer](https://github.com/LukeWardle/ftse-portfolio-rebalancer) for
+ridge regularisation with a cross-validated penalty.
